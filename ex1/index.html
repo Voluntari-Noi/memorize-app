@@ -11,13 +11,17 @@
       <h1>Titlu mare</h1>
     </div>
     <p>This is a paragraph.</p>
+    <button id="submit">Submit</button>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script>
       $(document).ready(function() {
         // console.log("Gata");
         $("h1").css("font-size", "50px");
-        debugger;
+        $("button#submit").on("click", function() {
+          $("h1").hide();
+          console.log("Am ascuns titlurile.");
+        });
 
       });
     </script>
