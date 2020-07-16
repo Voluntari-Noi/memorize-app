@@ -6,6 +6,19 @@
 
   <body>
 
+    <div class="definition" style="display: none">
+      <p class="textul-de-memorat">
+        Lorem ipsum dolor sit amet.
+      </p>
+      <p class="cuvinte-ascunse">
+        <span>
+          ipsum
+        </span>
+        <span>
+          sit
+        </span>
+      </p>
+    </div>
     <h1>Titlu copil al lui body</h1>
     <div>
       <h1>Titlu mare</h1>
@@ -17,12 +30,14 @@
     <script>
       $(document).ready(function() {
         // console.log("Gata");
-        $("h1").css("font-size", "50px");
-        $("button#submit").on("click", function() {
-          $("h1").hide();
-          console.log("Am ascuns titlurile.");
-        });
+        // $("h1").css("font-size", "50px");
+        // $("button#submit").on("click", function() {
+        //   $("h1").hide();
+        //   console.log("Am ascuns titlurile.");
+        // });
 
+        var definition = $("div.definition");
+        debugger;
       });
     </script>
 
