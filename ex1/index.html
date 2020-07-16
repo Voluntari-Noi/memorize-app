@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercitiu 1</title>
+  </head>
+
+  <body>
+
+    <h1>Titlu copil al lui body</h1>
+    <div>
+      <h1>Titlu mare</h1>
+    </div>
+    <p>This is a paragraph.</p>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        // console.log("Gata");
+        $("h1").css("font-size", "50px");
+        debugger;
+
+      });
+    </script>
+
+    <style>
+      body > h1 {
+        background: gray;
+      }
+
+      div h1 {
+        background: green;
+      }
+
+      h1 {
+        color: red;
+      }
+    </style>
+  </body>
+</html>
