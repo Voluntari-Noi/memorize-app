@@ -18,7 +18,7 @@ Cu posibilitatea de a muta cuvintele lipsă pe spațiile libere.
 
 Când toate spațiile sunt umplute cu cuvinte, aplicația verifică și stabilește dacă sunt sau nu rezolvate corect.
 
-## Poți rezolva folosind: javascript, jQuery, jQuery UI
+Poți rezolva folosind: javascript, jQuery, jQuery UI
 
 ## Exemple:
 
