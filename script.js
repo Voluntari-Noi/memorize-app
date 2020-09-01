@@ -240,20 +240,17 @@ $.fn.BlankWordsTest = function(){
   // Trying to have the definition in js not HTML. Next step: choose a random text.
 
 
+  var text_definition = "[Cuvântul] Tău este o [candelă] pentru [picioarele] mele și o [lumină] pe [cărarea] mea.";
 
-
-  var text_definition = "Lorem [ipsum] dolor [sit] amet.";
+  var reg = /(?<=\[).+?(?=\])/g;
   text_correct = text_definition.split("[").join("").split("]").join("");  // replace all [] with nothing
-  text_hidden = [
-    {hidden_word: "ipsum"},
-    {hidden_word: "sit"}
-  ];
+  text_hidden = text_definition.match(reg);  // Extract the list of hidden words
 
   $HTML_WIP  = "<div class='text-with-blank'><p>***</p></div>";
   $HTML_WIP2 = "<span class='blank'>__________</span>";
   $text_def = text_definition.replace(/\[(.+?)\]/g, $HTML_WIP2);
   $HTML_WIP3 = $HTML_WIP.split("***").join($text_def);
-  $HTML_to_display2 = "<div class='text-with-blank'><p>Lorem <span class='blank'>__________</span> dolor <span class='blank'>_________</span> amet.</p></div>";
+  $HTML_to_display2 = $HTML_WIP3;
   shuffle(text_hidden);
 
   var $HTML_to_display = $( "div.text-with-blank" );
@@ -261,16 +258,12 @@ $.fn.BlankWordsTest = function(){
   $( ".blank-words-left" ).html($HTML_to_display2);
 
 
-
-
-
-
   // --------------------
 
   for (var index in text_hidden) {
       var $new_word = $("<div>")
           .addClass( "word" )
-          .html(text_hidden[index].hidden_word);
+          .html(text_hidden[index]);
     $( ".blank-words-right" ).append($new_word);
   }
 
