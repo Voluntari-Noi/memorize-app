@@ -235,11 +235,37 @@ $.fn.BlankWordsTest = function(){
     text_hidden.push({hidden_word: hidden_word});
   });
 
+
+  // -------------------
+  // Trying to have the definition in js not HTML. Next step: choose a random text.
+
+
+
+
+  var text_definition = "Lorem [ipsum] dolor [sit] amet.";
+  text_correct = text_definition.split("[").join("").split("]").join("");  // replace all [] with nothing
+  text_hidden = [
+    {hidden_word: "ipsum"},
+    {hidden_word: "sit"}
+  ];
+
+  $HTML_WIP  = "<div class='text-with-blank'><p>***</p></div>";
+  $HTML_WIP2 = "<span class='blank'>__________</span>";
+  $text_def = text_definition.replace(/\[(.+?)\]/g, $HTML_WIP2);
+  $HTML_WIP3 = $HTML_WIP.split("***").join($text_def);
+  $HTML_to_display2 = "<div class='text-with-blank'><p>Lorem <span class='blank'>__________</span> dolor <span class='blank'>_________</span> amet.</p></div>";
   shuffle(text_hidden);
 
   var $HTML_to_display = $( "div.text-with-blank" );
   $HTML_to_display.find("span").replaceWith(function() { return "<div class='blank'>__________</div>"; });
-  $( ".blank-words-left" ).append($HTML_to_display);
+  $( ".blank-words-left" ).html($HTML_to_display2);
+
+
+
+
+
+
+  // --------------------
 
   for (var index in text_hidden) {
       var $new_word = $("<div>")
