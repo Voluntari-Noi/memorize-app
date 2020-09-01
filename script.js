@@ -20,18 +20,17 @@ $.fn.BlankWordsTest = function() {
     "[Cuvântul] Tău este o [candelă] pentru [picioarele] mele și o [lumină] pe [cărarea] mea. (Psalmii 119:105)",
     "Să [ascultăm], dar, [încheierea] tuturor [învățăturilor]: Teme-te de [Dumnezeu] și păzește [poruncile] Lui. Aceasta este [datoria] oricărui om. (Eclesiastul 12:13)",
     "Omul [socotește] că toate [căile] lui sunt fără [prihană], dar Cel ce [cercetează] inimile este [Domnul]. (Proverbe 21:2)",
-    "Puii de [leu] duc [lipsă] și li-e [foame], dar cei ce [caută] pe Domnul nu duc lipsă de [niciun] bine. (Psalmi 34:10)"
+    "Puii de [leu] duc [lipsă] și li-e [foame], dar cei ce [caută] pe Domnul nu duc lipsă de [niciun] bine. (Psalmi 34:10)",
+    "Domnul va [sfârși] ce a [început] pentru mine. Doamne, [bunătatea] Ta ține în [veci]: nu părăsi [lucrările] mâinilor Tale. (Psalmi 138:8)",
+    "Împrietenește-te dar cu [Dumnezeu] și vei avea [pace]; te vei [bucura] astfel iarăși de [fericire]. (Iov 22:21)",
+    "În adevăr, cei ce [trăiesc] după îndemnurile firii [pământești] umblă după lucrurile [firii] pământești; pe când cei ce trăiesc după [îndemnurile] Duhului umblă după lucrurile [Duhului]. (Romani 8:5)"
   ];
   var number_of_texts = all_texts.length;
-  var text_definition = all_texts[Math.floor(Math.random() * (number_of_texts))];
+  var random_index = Math.floor(Math.random() * (number_of_texts));
+  var text_definition = all_texts[random_index];
 
 /*
-Psalmi 138
-8. Domnul va sfârși ce a început pentru mine. Doamne, bunătatea Ta ține în veci: nu părăsi lucrările mâinilor Tale.
-Iov 22
-21. Împrietenește-te dar cu Dumnezeu și vei avea pace; te vei bucura astfel iarăși de fericire.
-Romani 8
-5. În adevăr, cei ce trăiesc după îndemnurile firii pământești umblă după lucrurile firii pământești; pe când cei ce trăiesc după îndemnurile Duhului umblă după lucrurile Duhului.
+
 Romani 8
 31. Deci ce vom zice noi în fața tuturor acestor lucruri? Dacă Dumnezeu este pentru noi, cine va fi împotriva noastră?
 Romani 8
