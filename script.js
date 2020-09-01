@@ -18,16 +18,14 @@ function shuffle(array) {
 $.fn.BlankWordsTest = function() {
   var all_texts = [
     "[Cuvântul] Tău este o [candelă] pentru [picioarele] mele și o [lumină] pe [cărarea] mea. (Psalmii 119:105)",
-    "Să [ascultăm], dar, [încheierea] tuturor [învățăturilor]: Teme-te de [Dumnezeu] și păzește [poruncile] Lui. Aceasta este [datoria] oricărui om. (Eclesiastul 12:13)"
+    "Să [ascultăm], dar, [încheierea] tuturor [învățăturilor]: Teme-te de [Dumnezeu] și păzește [poruncile] Lui. Aceasta este [datoria] oricărui om. (Eclesiastul 12:13)",
+    "Omul [socotește] că toate [căile] lui sunt fără [prihană], dar Cel ce [cercetează] inimile este [Domnul]. (Proverbe 21:2)",
+    "Puii de [leu] duc [lipsă] și li-e [foame], dar cei ce [caută] pe Domnul nu duc lipsă de [niciun] bine. (Psalmi 34:10)"
   ];
   var number_of_texts = all_texts.length;
   var text_definition = all_texts[Math.floor(Math.random() * (number_of_texts))];
 
 /*
-Proverbe 21
-2. Omul socotește că toate căile lui sunt fără prihană, dar Cel ce cercetează inimile este Domnul.
-Psalmi 34
-10. Puii de leu duc lipsă și li-e foame, dar cei ce caută pe Domnul nu duc lipsă de niciun bine.
 Psalmi 138
 8. Domnul va sfârși ce a început pentru mine. Doamne, bunătatea Ta ține în veci: nu părăsi lucrările mâinilor Tale.
 Iov 22
