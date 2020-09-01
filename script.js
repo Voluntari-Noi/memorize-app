@@ -84,14 +84,18 @@ $.fn.MultipleChoiceTest = function(){
       if(incorrect_answers == 0) {
         $( ".multiple-choice-test-status" )
           .html("<p class='status-succes-text'><b><i class='fa fa-check'></i></b></p>");
-        alert("Bravooo!");
+        alert("Bravo!");
+      
+
 
         $("[type=radio]").each(function(){
           $(this).attr('disabled',true);
         });
       } else {
         if (alerted_fail == false) {
-          alert("Nuuuu");
+         alert("Nuuu");
+
+
         }
 
         setTimeout(function()
@@ -310,12 +314,12 @@ $.fn.BlankWordsTest = function(){
         if(text_tried == text_correct) {
           $( ".blank-words-status" )
             .html("<p class='status-succes-text'><b> <i class='fa fa-check'></i></b></p>");
-          alert("Bravo!");
+          swal("🎉 Felicitări! ", "Ai învățat un verset!");
 
           $(".word").css("pointer-events","none");
         } else {
           if (alerted_fail == false) {
-            alert("Nuuu");
+          swal("Ai greșit!❌" ,"Încearcă din nou.");
           }
 
           setTimeout(function()
