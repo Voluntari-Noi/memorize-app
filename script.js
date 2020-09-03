@@ -24,7 +24,7 @@ $.fn.BlankWordsTest = function() {
     "Domnul va [sfârși] ce a [început] pentru mine. Doamne, [bunătatea] Ta ține în [veci]: nu părăsi [lucrările] mâinilor Tale. (Psalmii 138:8)",
     "Împrietenește-te dar cu [Dumnezeu] și vei avea [pace]; te vei [bucura] astfel iarăși de [fericire]. (Iov 22:21)",
     "Deci ce vom [zice] noi în fața [tuturor] acestor [lucruri]? Dacă [Dumnezeu] este pentru [noi], cine va fi împotriva noastră? (Romani 8:31)",
-    "[Isus Hristos] este [același] [ieri] și [azi] și [în veci]! (Evrei 13:8)", 
+    "[Isus Hristos] este [același] ieri și azi și în veci! (Evrei 13:8)", 
     "În adevăr, cei ce [trăiesc] după îndemnurile firii [pământești] umblă după lucrurile [firii] pământești; pe când cei ce trăiesc după [îndemnurile] Duhului umblă după lucrurile [Duhului]. (Romani 8:5)"
   ];
   var number_of_texts = all_texts.length;
