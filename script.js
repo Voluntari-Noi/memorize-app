@@ -49,7 +49,6 @@ Apocalipsa 14
 12. Aici este răbdarea sfinților, care păzesc poruncile lui Dumnezeu și credința lui Isus.”
 */
 
-  // var text_definition = "[Cuvântul] Tău este o [candelă] pentru [picioarele] mele și o [lumină] pe [cărarea] mea.";
   var reg = /(?<=\[).+?(?=\])/g;
   var text_correct = text_definition.split("[").join("").split("]").join("");  // replace all [] with nothing
   var text_hidden = text_definition.match(reg);  // Extract the list of hidden words
