@@ -25,7 +25,7 @@ $.fn.BlankWordsTest = function() {
     "Împrietenește-te dar cu [Dumnezeu] și vei avea [pace]; te vei [bucura] astfel iarăși de [fericire]. (Iov 22:21)",
     "Deci ce vom [zice] noi în fața [tuturor] acestor [lucruri]? Dacă [Dumnezeu] este pentru [noi], cine va fi împotriva noastră? (Romani 8:31)",
     "[Isus Hristos] este [același] ieri și azi și în veci! (Evrei 13:8)", 
-    "[Căci sunt bine încredințat că nici [moartea], nici [viața], nici [îngerii], nici [stăpânirile], nici [puterile], nici lucrurile de [acum], nici cele [viitoare], nici [înălțimea], nici [adâncimea], nicio altă [făptură], nu vor fi în stare să ne [despartă] de dragostea lui Dumnezeu care este în Isus Hristos, Domnul [nostru]. (Romani 8:38,39) ",
+    "Căci sunt bine încredințat că nici [moartea], nici [viața], nici [îngerii], nici [stăpânirile], nici [puterile], nici lucrurile de [acum], nici cele [viitoare], nici [înălțimea], nici [adâncimea], nicio altă [făptură], nu vor fi în stare să ne [despartă] de dragostea lui Dumnezeu care este în Isus Hristos, Domnul [nostru]. (Romani 8:38,39) ",
     "În adevăr, cei ce [trăiesc] după îndemnurile firii [pământești] umblă după lucrurile [firii] pământești; pe când cei ce trăiesc după [îndemnurile] Duhului umblă după lucrurile [Duhului]. (Romani 8:5)"
   ];
   var number_of_texts = all_texts.length;
