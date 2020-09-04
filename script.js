@@ -24,7 +24,6 @@ $.fn.BlankWordsTest = function() {
     "Domnul va [sfârși] ce a [început] pentru mine. Doamne, [bunătatea] Ta ține în [veci]: nu părăsi [lucrările] mâinilor Tale. (Psalmii 138:8)",
     "Împrietenește-te dar cu [Dumnezeu] și vei avea [pace]; te vei [bucura] astfel iarăși de [fericire]. (Iov 22:21)",
     "Deci ce vom [zice] noi în fața [tuturor] acestor [lucruri]? Dacă [Dumnezeu] este pentru [noi], cine va fi împotriva noastră? (Romani 8:31)",
-    "[Isus Hristos] este [același] ieri și azi și în veci! (Evrei 13:8)", 
     "Căci suntem în [clipa] când [judecata] stă să înceapă de la [Casa] lui Dumnezeu. Și, dacă începe cu [noi], care va fi [sfârșitul] celor ce nu [ascultă] de [Evanghelia] lui Dumnezeu? (1 Petru 4:17)",
     "El zicea cu [glas] tare: „Temeți-vă de Dumnezeu și dați-I [slavă], căci a venit [ceasul] judecății Lui; și închinați-vă Celui ce a făcut [cerul] și [pământul], [marea] și [izvoarele] [apelor]!” (Apocalipsa 14:7)",
     "Apoi a urmat un alt [înger], al [doilea], și a zis: „A căzut, [a căzut] Babilonul, cetatea cea mare, care a adăpat toate neamurile din vinul mâniei curviei ei!” (Apocalipsa 14:8)",
