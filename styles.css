@@ -75,6 +75,9 @@ body,html { height: 100%; }
 .category-sorting-test { -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;display: inline-block; position: relative; height: 100%; width: 100%; }
 .item { height: auto; padding: 0.5em; float: left; margin: 5px 5px 5px 5px; background: white; }
 .category { width: 90%; padding: 0.5em; float: left; margin: 10px; background: #f5f5f5; }
+
+h1 {text-align: center;}
+
 .sorting-test-categories { display: inline-block; width: 50%; height: 80%; background: #E4E4E4; float: left; }
 .sorting-test-items { display: inline-block; width: 47%; height: 80%; background: #D9D9D9; padding: 0px 10px 10px 10px; float: right; }
 
