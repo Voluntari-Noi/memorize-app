@@ -90,3 +90,4 @@ h1 {text-align: center;}
 .dropped { display: inline; float: inherit; }
 
 div.footer p { text-align:center; }
+div.text-with-blank p { line-height: 33px; }
