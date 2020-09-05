@@ -85,6 +85,6 @@ h1 {text-align: center;}
 .word { float: left; padding: 0.2em; margin: 2px 2px 2px 2px; background: white;}
 .blank { display: inline; width: 150px; background: #f5f5f5; padding: 4px;}
 .blank-words-left { width: 100%; background: #E4E4E4; float: left; font-size: 13pt; }
-.blank-words-right { width: 98%; background: #D9D9D9; padding: 10px 10px 10px 10px; float: right; }
+.blank-words-right { width: 100%; background: #D9D9D9; padding: 10px 10px 10px 10px; float: right; }
 .text-hidden { color: red; }
 .dropped { display: inline; float: inherit; }
