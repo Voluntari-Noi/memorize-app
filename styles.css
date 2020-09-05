@@ -85,7 +85,3 @@ body,html { height: 100%; }
 .blank-words-right { width: 98%; background: #D9D9D9; padding: 0px 10px 10px 10px; float: right; }
 .text-hidden { color: red; }
 .dropped { display: inline; float: inherit; }
-
-div.footer {
-  background: red;
-}
