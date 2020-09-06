@@ -37,7 +37,7 @@ $.fn.BlankWordsTest = function() {
     "Atunci [toţi] cei ce [se încred] în Tine se vor [bucura], se vor [înveseli] totdeauna, căci Tu îi vei [ocroti]. Tu vei fi bucuria celor ce [iubesc] Numele Tău. (Psalmii 5:11)",
     "Încredinţează-ţi [soarta] în [mâna] Domnului, şi El te va [sprijini]. El nu va [lăsa] niciodată să se [clatine] cel neprihănit. (Psalmii 55:22)",
     "În [adevăr], [însuşirile] [nevăzute] ale Lui, [puterea] Lui [veşnică] şi [dumnezeirea] Lui se văd [lămurit], de la facerea lumii, când te uiţi cu băgare de seamă la ele în lucrurile făcute de El. Aşa că nu se pot dezvinovăţi. (Romani 1:20)",
-    "Acum, dar, rămân acestea trei: [credinţa], [nădejdea] şi [dragostea]; dar cea mai mare dintre ele este [dragostea]. (1 Corinteni 13:13)",
+    "Acum, dar, rămân acestea trei: [credinţa], [nădejdea] şi dragostea; dar cea mai mare dintre ele este [dragostea]. (1 Corinteni 13:13)",
     "Cei ce [cunosc] Numele Tău [se încred] în Tine, căci Tu nu [părăseşti] pe cei ce Te [caută], Doamne! (Psalmii 9:10)",
     "Isus Hristos este [acelaşi] [ieri] şi [azi] şi [în veci]! (Evrei [1][3]:[8])",
     "Şi Dumnezeu a zis: Iată că v-am dat orice [iarbă] care face [sămânţă] şi care este pe faţa întregului pământ şi orice [pom] care are în el rod cu [sămânţă]: aceasta să fie [hrana] voastră. (Genesa 1:29)",
