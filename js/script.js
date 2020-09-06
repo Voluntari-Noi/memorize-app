@@ -49,7 +49,7 @@ $.fn.BlankWordsTest = function() {
     "Să nu te părăsească [bunătatea] şi [credincioşia]: leagă-ţi-le la gât, scrie-le pe tăbliţa inimii tale. (Proverbe 3:3)",
     "Încredinţează-ţi [lucrările] în mâna Domnului şi îţi vor izbuti [planurile]. (Proverbe [1][6]:[3])",
     "Fiindcă atât de mult a iubit Dumnezeu [lumea], că a dat pe singurul Lui Fiu, pentru ca oricine crede în El să nu piară, ci să aibă [viaţa veşnică]. (Ioan [3]:[1][6])",
-    "Încredeţi-vă în [Domnul] pe vecie, căci [Domnul Dumnezeu] este Stânca veacurilor. (Isaia 26:4)",
+    "Încredeţi-vă în [Domnul] pe vecie, căci [Domnul Dumnezeu] este [Stânca veacurilor]. (Isaia 26:4)",
     "[O inimă veselă] [este] [un bun leac], dar [un duh mâhnit] [usucă oasele]. (Proverbe 17:22)",
     "Veniţi la Mine, toţi cei [trudiţi] şi [împovăraţi], şi Eu vă voi da odihnă. (Matei [1][1]:[2][8])",
     "Căci pentru mine a trăi este [Hristos], şi a muri este un [câştig]. (Filipeni [1]:[2][1])",
