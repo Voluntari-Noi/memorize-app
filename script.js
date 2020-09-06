@@ -50,7 +50,8 @@ $.fn.BlankWordsTest = function() {
   var random_index = Math.floor(Math.random() * (number_of_texts));
   var text_definition = all_texts[random_index];
 
-  var reg = /(?<=\[).+?(?=\])/g;
+  var reg = /([^[]+(?=]))/g;
+  //var reg =/(?<=\[).+?(?=\])/g;    Old Version not working on Safari rollback in case the above expression doesn't work for all cases
   var text_correct = text_definition.split("[").join("").split("]").join("");  // replace all [] with nothing
   var text_hidden = text_definition.match(reg);  // Extract the list of hidden words
 
