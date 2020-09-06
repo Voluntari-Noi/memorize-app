@@ -1,7 +1,7 @@
 {
   "name": "Memorize Bible Verse",
   "short_name": "Memorize Verses",
-  "start_url": "index.html",
+  "start_url": "https://voluntari-noi.github.io/memorize-app/index.html",
   "display": "standalone",
   "background_color": "#fdfdfd",
   "theme_color": "#db4938",
