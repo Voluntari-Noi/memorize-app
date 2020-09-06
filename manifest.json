@@ -1,6 +1,6 @@
 {
-  "name": "Memorize Bible Verse",
-  "short_name": "Memorize Verses",
+  "name": "Versete de Memorat",
+  "short_name": "Versete de Memorat",
   "start_url": "https://voluntari-noi.github.io/memorize-app/index.html",
   "display": "standalone",
   "background_color": "#ffffff",
