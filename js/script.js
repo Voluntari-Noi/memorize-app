@@ -65,7 +65,20 @@ $.fn.BlankWordsTest = function() {
     "Domnul însuşi [va merge înaintea ta], El însuşi [va fi cu tine], nu te va [părăsi] şi nu te va [lăsa]; nu te [teme] şi nu te [înspăimânta]! (Deuteronom 31:8)",
     "Ca [ploaia] [să curgă] [învăţăturile] mele, ca [roua] [să cadă] cuvântul meu, ca [ploaia] [repede] pe verdeaţă, ca [picăturile de ploaie] pe iarbă! (Deuteronom 32:2)",
     "El este [Stânca]; lucrările Lui sunt [desăvârşite], căci toate căile Lui sunt [drepte]; El este un Dumnezeu [credincios] şi [fără nedreptate], El este [drept] şi [curat]. (Deuteronom 32:4)",
-    "Nimeni nu este ca [Dumnezeul lui Israel], [El] trece pe ceruri ca să-ţi vină în ajutor, trece cu măreţie pe nori. (Deuteronom [33]:[26])"
+    "Nimeni nu este ca [Dumnezeul lui Israel], [El] trece pe ceruri ca să-ţi vină în ajutor, trece cu măreţie pe nori. (Deuteronom [33]:[26])",
+    "De ce să fii ca un [om încremenit], ca un [viteaz] care nu ne [poate ajuta]? Şi totuşi Tu eşti în mijlocul nostru, Doamne, şi Numele Tău este chemat peste noi. De aceea nu ne [părăsi]! (Ieremia 14:9)",
+    "Acum dau toate aceste ţări în mâinile [robului Meu Nebucadneţar], [împăratul Babilonului]; îi dau chiar şi [fiarele câmpului] ca să-i fie supuse. Toate [neamurile] vor fi supuse [lui], [fiului său] şi [fiului fiului său], până va veni şi vremea ţării lui, şi o vor supune neamuri puternice şi împăraţi mari. (Ieremia 27:6-7)",
+    "Gândiţi-vă la [lucrurile de sus], nu la cele de pe pământ. Căci voi aţi murit, şi [viaţa voastră] este ascunsă cu Hristos în Dumnezeu. (Coloseni 3:2-3)",
+    "Dar [Domnul oştirilor] va fi înălţat prin [judecată], şi [Dumnezeul cel sfânt] va fi sfinţit prin [dreptate]. (Isaia [5]:[1][6])",
+    "Doamne, Tu eşti Dumnezeul meu; pe Tine Te voi înălţa! Laud Numele Tău, căci ai făcut [lucruri minunate]; [planurile Tale] făcute mai dinainte s-au împlinit cu credincioşie. (Isaia [2][5]:[1])",
+    "Totuşi Domnul [aşteaptă] [să Se milostivească de voi] şi Se va scula [să vă dea îndurare], căci Domnul este un Dumnezeu [drept]: ferice de toţi cei ce [nădăjduiesc în El]! (Isaia 30:18)",
+    "Da, [popor al Sionului], [locuitor al Ierusalimului], nu vei mai [plânge]! El Se va îndura de tine, când vei [striga]; cum va [auzi], te va [asculta]. (Isaia 30:19)",
+    "Lucrarea [neprihănirii] va fi [pacea]; [roada neprihănirii]: [odihna] şi [liniştea] pe vecie. (Isaia 32:17)",
+    "Doamne, ai milă de noi! Noi nădăjduim în Tine. Fii [ajutorul nostru] în [fiecare dimineaţă] şi [izbăvirea noastră] la [vreme de nevoie]! (Isaia 33:2)",
+    "Zilele tale sunt [statornice], [înţelepciunea] şi [priceperea] sunt un [izvor de mântuire]; [frica de Domnul], iată comoara Sionului. (Isaia 33:6)",
+    "Căutaţi în [cartea Domnului] şi citiţi! Niciuna din toate acestea nu [va lipsi], nici una, nici alta nu [vor da greş]. Căci gura Domnului [a poruncit] lucrul acesta: Duhul Lui [va strânge] acele sălbăticiuni. (Isaia 34:16)",
+    "Spuneţi celor [slabi] de inimă: „Fiţi [tari], şi nu vă temeţi! Iată Dumnezeul vostru, [răzbunarea] va veni, [răsplătirea] lui Dumnezeu; El însuşi [va veni] şi [vă va mântui.]” (Isaia 35:4)",
+    "Cei izbăviţi de Domnul [se vor întoarce] şi [vor merge] spre Sion cu cântece de biruinţă. O [bucurie] [veşnică] le va încununa capul, [veselia] şi [bucuria] îi vor apuca, iar [durerea] şi [gemetele] vor fugi! (Isaia 35:10)"
 
   ];
   var number_of_texts = all_texts.length;
