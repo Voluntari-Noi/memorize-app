@@ -100,7 +100,7 @@ $.fn.BlankWordsTest = function() {
     "Dacă [zicem] că n-am păcătuit, Îl [facem] mincinos, şi Cuvântul Lui nu este în noi. ([1] Ioan [1]:[9])",
     "Și faptele firii pământești sunt cunoscute și sunt acestea: [preacurvia], [curvia], [necurăția], [desfrânarea], [închinarea la idoli], [vrăjitoria], [vrăjbile], [certurile], [zavistiile], [mâniile], [neînțelegerile], [dezbinările], [certurile de partide], [pizmele], [uciderile], [bețiile], [îmbuibările] și alte lucruri asemănătoare cu acestea. Vă spun mai dinainte, cum am mai spus, că cei ce fac astfel de lucruri nu vor moșteni Împărăția lui Dumnezeu. (Galateni 5:19-21)",
     "Căci Eu ştiu gândurile pe care le am cu privire la voi, zice Domnul, gânduri de [pace], şi nu de [nenorocire], ca să vă dau [un viitor] şi [o nădejde]. Voi Mă veţi [chema] şi veţi [pleca]; Mă veţi [ruga], şi vă voi [asculta]. Mă veţi [căuta], şi Mă veţi [găsi], dacă Mă veţi căuta cu toată inima. (Ieremia 29:11-13)",
-    "Dar Domnul oştirilor va fi [înălţat] prin [judecată], şi Dumnezeul cel sfânt va fi [sfinţit] prin [dreptate]. (Isaia 5:16)",
+    "Dar [Domnul oştirilor] va fi [înălţat] prin [judecată], şi [Dumnezeul cel sfânt] va fi [sfinţit] prin [dreptate]. (Isaia 5:16)",
     "Știu, Doamne, că [judecățile Tale] sunt [drepte]: din credincioșie m-ai [smerit]. (Psalmi [119:[7][5])",
     "Fă ca [bunătatea Ta] să-mi fie [mângâierea], cum ai făgăduit robului Tău! (Psalmi 119:76)",
     "Doamne, Tu eşti Dumnezeul meu; pe Tine Te voi înălţa! Laud [Numele Tău], căci ai făcut lucruri [minunate]; [planurile Tale] făcute mai dinainte s-au împlinit cu [credincioşie]. (Isaia 25:1)",
