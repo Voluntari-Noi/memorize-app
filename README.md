@@ -1,4 +1,4 @@
 # memorize-app
-Application used to memorize quotes
+Versete de memorat
 
 [DEMO](https://voluntari-noi.github.io/memorize-app/)
