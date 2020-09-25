@@ -21,7 +21,9 @@ $(document).ready(function () {
     $(".blank-words-test").BlankWordsTest();
   });
 });
-
+function clearLocalStorage(){
+  localStorage.clear();
+}
 function shuffle(array) {
   var currentIndex = array.length, temporaryValue, randomIndex;
 
