@@ -108,7 +108,8 @@ div.memtest h4 { padding-left: 10px; }
     text-align: center;
     text-transform: uppercase;
     font-weight: 600;
-    letter-spacing: 1px;
+	letter-spacing: 1px;
+	cursor: hand;
 }
 .alege-dificultate>center{
 	font-size:15px;
