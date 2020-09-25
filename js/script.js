@@ -135,7 +135,7 @@ function showVerse(all_texts) {
 
 
 $.fn.BlankWordsTest = function () {
-  var jsonStr = httpGet("../assets/versete.json");
+  var jsonStr = httpGet("assets/versete.json");
   var jsonObj = JSON.parse(jsonStr);
   var dificultate_selectata = localStorage.getItem("dificultate");
   jsonObj.memoreaza.forEach(elem => {
