@@ -77,7 +77,10 @@ function showVerse(all_texts) {
   var number_of_texts = all_texts.length;
   var random_index = Math.floor(Math.random() * (number_of_texts));
   var text_definition = all_texts[random_index];
-
+  var usage = getUsage(text_definition);
+  if (usage > 0) {
+    $(".blank-words-test").attr("title", "Ai invatat deja de " + usage + " ori");
+  }
   var reg = /([^[]+(?=]))/g;
   //var reg =/(?<=\[).+?(?=\])/g;    Old Version not working on Safari rollback in case the above expression doesn't work for all cases
   var text_correct = text_definition.split("[").join("").split("]").join("");  // replace all [] with nothing
