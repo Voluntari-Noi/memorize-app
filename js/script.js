@@ -79,7 +79,10 @@ function showVerse(all_texts) {
   var text_definition = all_texts[random_index];
   var usage = getUsage(text_definition);
   if (usage > 0) {
-    $(".blank-words-test").attr("title", "Ai invatat deja de " + usage + " ori");
+    if (usage == 1)
+      $(".blank-words-test").attr("title", "Ai invatat deja odata acest verset!");
+    else
+      $(".blank-words-test").attr("title", "Ai invatat deja de " + usage + " ori!");
   }
   var reg = /([^[]+(?=]))/g;
   //var reg =/(?<=\[).+?(?=\])/g;    Old Version not working on Safari rollback in case the above expression doesn't work for all cases
