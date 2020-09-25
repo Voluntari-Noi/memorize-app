@@ -1,6 +1,13 @@
 {
 	"memoreaza": [
 		{
+			"dificultate": "test",
+			"versete": [
+				"[Cuvântul] Tău este o [candelă] pentru [picioarele] mele și o [lumină] pe [cărarea] mea. (Psalmii 119:105)",
+				"Să [ascultăm], dar, [încheierea] tuturor [învățăturilor]: Teme-te de [Dumnezeu] și păzește [poruncile] Lui. Aceasta este [datoria] oricărui om. (Eclesiast 12:13)",
+			]
+		},
+		{
 			"dificultate": "usor",
 			"versete": [
 				"[Cuvântul] Tău este o [candelă] pentru [picioarele] mele și o [lumină] pe [cărarea] mea. (Psalmii 119:105)",
@@ -23,7 +30,7 @@
 		},
 		{
 			"dificultate": "mediu",
-			"versete": [				
+			"versete": [
 				"Cine are [poruncile] Mele şi le [păzeşte] acela [Mă iubeşte]; şi cine Mă iubeşte va fi iubit de Tatăl Meu. Eu îl voi iubi şi Mă voi arăta lui. (Ioan 14:21)",
 				"Atunci [toţi] cei ce [se încred] în Tine se vor [bucura], se vor [înveseli] totdeauna, căci Tu îi vei [ocroti]. Tu vei fi bucuria celor ce [iubesc] Numele Tău. (Psalmii 5:11)",
 				"Încredinţează-ţi [soarta] în [mâna] Domnului, şi El te va [sprijini]. El nu va [lăsa] niciodată să se [clatine] cel neprihănit. (Psalmii 55:22)",
@@ -109,7 +116,8 @@
 				"Vrăjmășie voi pune între [tine] și [femeie], între [sămânţa ta] și [sămânţa ei]. Aceasta îţi va zdrobi [capul], și tu îi vei zdrobi [călcâiul]. (Genesa 3:15)",
 				"[Duhul lui Dumnezeu] să-L cunoaşteţi după aceasta: [orice duh] care mărturiseşte că [Isus Hristos] a venit [în trup] este de la Dumnezeu. (1 Ioan 4:2)",
 				"Voi sunteţi [lumina lumii]. O [cetate aşezată] pe un munte nu poate să rămână ascunsă. (Matei [5]:[1][4])",
-				"Tu [ştii tot], Doamne! Adu-Ţi aminte de [mine], nu mă [uita], [răzbună-mă] pe prigonitorii mei! Nu mă [lua], după îndelunga Ta [răbdare]. Gândeşte-Te că sufăr [ocara] din pricina Ta! (Ieremia 15:15)"				]
+				"Tu [ştii tot], Doamne! Adu-Ţi aminte de [mine], nu mă [uita], [răzbună-mă] pe prigonitorii mei! Nu mă [lua], după îndelunga Ta [răbdare]. Gândeşte-Te că sufăr [ocara] din pricina Ta! (Ieremia 15:15)"
+			]
 		}
 	]
 }

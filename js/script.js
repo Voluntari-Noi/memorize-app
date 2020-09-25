@@ -10,6 +10,7 @@ function reloadView() {
     $(".memtest").addClass("visible");
     $(".alege-dificultate").removeClass("visible");
     $(".memtest").removeClass("hidden");
+    $(".dificultate-selectata").removeClass("color-test");
     $(".dificultate-selectata").removeClass("color-usor");
     $(".dificultate-selectata").removeClass("color-mediu");
     $(".dificultate-selectata").removeClass("color-greu");
