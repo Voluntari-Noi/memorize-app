@@ -69,7 +69,7 @@ function getUsage(str) {
   if (usage.length == 0)
     usage = "0";
   console.log(usage + "   " + strHash + "   " + str);
-  return parseInt(usage) + (strHashF == lastVerseHash ? 1 : 0);
+  return parseInt(usage) + (strHash == lastVerseHash ? 1 : 0);
 }
 function showVerse(all_texts) {
   $(".blank-words-right").html("");
