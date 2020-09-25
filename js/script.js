@@ -67,7 +67,7 @@ function getUsage(str) {
     usage = "0";
   if (usage.length == 0)
     usage = "0";
-  console.log(usage + "   " + str);
+  console.log(usage + "   " + getHashCode(str) + "   " + str);
   return parseInt(usage);
 }
 function showVerse(all_texts) {
