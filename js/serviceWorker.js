@@ -6,6 +6,7 @@ const assets = [
   "../css/bootstrap.min.css",
   "../css/styles.css",
   "../js/script.js",
+  "../assets/versete.json",
 ]
 
 self.addEventListener("install", installEvent => {
