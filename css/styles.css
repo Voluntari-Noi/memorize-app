@@ -99,3 +99,8 @@ div.memtest h4 { padding-left: 10px; }
 .visible{
 	display: block;
 }
+.dificultate{
+	padding:15px;
+	background-color:lightskyblue;
+	border: 1px solid gray;
+}
