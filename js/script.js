@@ -62,13 +62,14 @@ function httpGet(theUrl) {
   return xmlHttp.responseText;
 }
 function getUsage(str) {
-  var usage = localStorage.getItem(getHashCode(str));
+  var strHash = getHashCode(str);
+  var usage = localStorage.getItem(strHash);
   if (usage == undefined)
     usage = "0";
   if (usage.length == 0)
     usage = "0";
-  console.log(usage + "   " + getHashCode(str) + "   " + str);
-  return parseInt(usage);
+  console.log(usage + "   " + strHash + "   " + str);
+  return parseInt(usage) + (strHashF == lastVerseHash ? 1 : 0);
 }
 function showVerse(all_texts) {
   $(".blank-words-right").html("");
@@ -138,8 +139,10 @@ function showVerse(all_texts) {
       if (number_words_to_drop == 0) {
         var text_tried = $("div.blank-words-left p").text();
         console.log(text_definition);
+        var tdHash = getHashCode(text_definition);
         var usage = parseInt(getUsage(text_definition)) + 1;
-        localStorage.setItem(getHashCode(text_definition), usage);
+        localStorage.setItem(tdHash, usage);
+        localStorage.setItem("last-verse", tdHash);
         if (text_tried == text_correct) {
           $(".blank-words-status").html("<p class='status-succes-text'><b> <i class='fa fa-check'></i></b></p>");
           swal("🎉 Felicitări! ", "Ai învățat un verset!");
@@ -166,6 +169,7 @@ function showVerse(all_texts) {
   });
 }
 var minVerseUsage = 0;
+var lastVerseHash = 0;
 function filterOnlyLessGuessedVerses(verse) {
   var verseUsage = getUsage(verse);
   return verseUsage == minVerseUsage;
@@ -181,6 +185,7 @@ $.fn.BlankWordsTest = function () {
       console.log(elem);
       var usages = elem.versete.map(item => getUsage(item));
       minVerseUsage = Math.min(...usages);
+      lastVerseHash = localStorage.getItem("last-verse")
       console.log(minVerseUsage);
       console.log(usages);
       showVerse(elem.versete.filter(filterOnlyLessGuessedVerses));
