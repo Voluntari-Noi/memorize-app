@@ -137,8 +137,9 @@ function showVerse(all_texts) {
 
       if (number_words_to_drop == 0) {
         var text_tried = $("div.blank-words-left p").text();
-        var usage = parseInt(getUsage(text_correct)) + 1;
-        localStorage.setItem(getHashCode(text_correct), usage);
+        console.log(text_definition);
+        var usage = parseInt(getUsage(text_definition)) + 1;
+        localStorage.setItem(getHashCode(text_definition), usage);
         if (text_tried == text_correct) {
           $(".blank-words-status").html("<p class='status-succes-text'><b> <i class='fa fa-check'></i></b></p>");
           swal("🎉 Felicitări! ", "Ai învățat un verset!");
