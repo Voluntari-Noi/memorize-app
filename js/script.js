@@ -26,6 +26,9 @@ $(document).ready(function () {
     localStorage.setItem("dificultate", $(this).text());
     reloadView();
   });
+  $(".dificultate-selectata").on("click",function(){
+    clearLocalStorage();
+  });
 });
 function clearLocalStorage() {
   localStorage.clear();
