@@ -1,7 +1,5 @@
-$(document).ready(function () {
+function reloadView() {
   var dificultate = localStorage.getItem("dificultate");
-  console.log(dificultate);
-  console.log("before if");
   if (dificultate == undefined || dificultate.length == 0) {
     $(".alege-dificultate").addClass("visible");
     $(".memtest").addClass("hidden");
@@ -12,21 +10,26 @@ $(document).ready(function () {
     $(".memtest").addClass("visible");
     $(".alege-dificultate").removeClass("visible");
     $(".memtest").removeClass("hidden");
-
+    $(".dificultate-selectata").removeClass("color-usor");
+    $(".dificultate-selectata").removeClass("color-mediu");
+    $(".dificultate-selectata").removeClass("color-greu");
+    $(".dificultate-selectata").addClass("color-" + dificultate);
+    $(".dificultate-selectata").text(dificultate);
     $(".blank-words-test").BlankWordsTest();
   }
+}
+
+$(document).ready(function () {
+  reloadView();
   $(".dificultate").on("click", function () {
     console.log("Dificultate" + $(this).text());
     localStorage.setItem("dificultate", $(this).text());
-    $(".alege-dificultate").addClass("hidden");
-    $(".memtest").addClass("visible");
-    $(".alege-dificultate").removeClass("visible");
-    $(".memtest").removeClass("hidden");
-    $(".blank-words-test").BlankWordsTest();
+    reloadView();
   });
 });
 function clearLocalStorage() {
   localStorage.clear();
+  reloadView();
 }
 function shuffle(array) {
   var currentIndex = array.length, temporaryValue, randomIndex;
