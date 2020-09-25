@@ -18,6 +18,10 @@ $(document).ready(function () {
   $(".dificultate").on( "click", function() {
     console.log("Dificultate"+ $( this ).text() );
     localStorage.setItem("dificultate",$(this).text());
+    $(".alege-dificultate").addClass("hidden");
+    $(".memtest").addClass("visible");
+    $(".alege-dificultate").removeClass("visible");
+    $(".memtest").removeClass("hidden");
     $(".blank-words-test").BlankWordsTest();
   });
 });
