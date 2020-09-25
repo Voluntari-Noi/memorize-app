@@ -5,9 +5,13 @@ $(document).ready(function () {
   if (dificultate == undefined || dificultate.length == 0) {
     $(".alege-dificultate").addClass("visible");
     $(".blank-words-test").addClass("hidden");
+    $(".alege-dificultate").removeClass("hidden");
+    $(".blank-words-test").removeClass("visible");
   } else {
     $(".alege-dificultate").addClass("hidden");
     $(".blank-words-test").addClass("visible");
+    $(".alege-dificultate").removeClass("visible");
+    $(".blank-words-test").removeClass("hidden");
     $(".blank-words-test").BlankWordsTest();
   }
   $(".dificultate").on( "click", function() {
