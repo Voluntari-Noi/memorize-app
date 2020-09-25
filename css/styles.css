@@ -100,7 +100,16 @@ div.memtest h4 { padding-left: 10px; }
 	display: block;
 }
 .dificultate{
-	padding:15px;
-	background-color:lightskyblue;
-	border: 1px solid gray;
+    padding: 15px;
+    background-color: lightskyblue;
+    border: 1px solid gray;
+    margin: 3px auto;
+    width: 200px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.alege-dificultate>center{
+	font-size:15px;
 }
