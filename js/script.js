@@ -64,10 +64,10 @@ function httpGet(theUrl) {
 function getUsage(str) {
   var usage = localStorage.getItem(getHashCode(str));
   if (usage == undefined)
-    usage = 0;
+    usage = "0";
   if (usage.length == 0)
-    usage = 0;
-  return usage;
+    usage = "0";
+  return parseInt(usage);
 }
 function showVerse(all_texts) {
   $(".blank-words-right").html("");
@@ -136,7 +136,7 @@ function showVerse(all_texts) {
 
       if (number_words_to_drop == 0) {
         var text_tried = $("div.blank-words-left p").text();
-        var usage = getUsage(text_correct) + 1;
+        var usage = parseInt(getUsage(text_correct)) + 1;
         localStorage.setItem(getHashCode(text_correct), usage);
         if (text_tried == text_correct) {
           $(".blank-words-status").html("<p class='status-succes-text'><b> <i class='fa fa-check'></i></b></p>");
@@ -177,8 +177,10 @@ $.fn.BlankWordsTest = function () {
     if (elem.dificultate == dificultate_selectata) {
       console.log("Showing verse for dificulty:" + elem.dificultate);
       console.log(elem);
-
-      minVerseUsage = Math.min(...elem.versete.map(item => getUsage(item)));
+      var usages=elem.versete.map(item => getUsage(item));
+      minVerseUsage = Math.min(...usages);
+      console.log(minVerseUsage);
+      console.log(usages);
       showVerse(elem.versete.filter(filterOnlyLessGuessedVerses));
     } else {
       console.log(elem.dificultate + " " + dificultate_selectata);
