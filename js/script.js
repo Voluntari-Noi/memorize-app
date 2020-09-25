@@ -18,6 +18,7 @@ $(document).ready(function () {
   $(".dificultate").on( "click", function() {
     console.log("Dificultate"+ $( this ).text() );
     localStorage.setItem("dificultate",$(this).text());
+    $(".blank-words-test").BlankWordsTest();
   });
 });
 
