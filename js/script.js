@@ -15,9 +15,9 @@ $(document).ready(function () {
 
     $(".blank-words-test").BlankWordsTest();
   }
-  $(".dificultate").on( "click", function() {
-    console.log("Dificultate"+ $( this ).text() );
-    localStorage.setItem("dificultate",$(this).text());
+  $(".dificultate").on("click", function () {
+    console.log("Dificultate" + $(this).text());
+    localStorage.setItem("dificultate", $(this).text());
     $(".alege-dificultate").addClass("hidden");
     $(".memtest").addClass("visible");
     $(".alege-dificultate").removeClass("visible");
@@ -25,7 +25,7 @@ $(document).ready(function () {
     $(".blank-words-test").BlankWordsTest();
   });
 });
-function clearLocalStorage(){
+function clearLocalStorage() {
   localStorage.clear();
 }
 function shuffle(array) {
@@ -147,6 +147,8 @@ $.fn.BlankWordsTest = function () {
   var dificultate_selectata = localStorage.getItem("dificultate");
   jsonObj.memoreaza.forEach(elem => {
     if (elem.dificultate == dificultate_selectata) {
+      console.log("Showing verse for dificulty:" + elem.dificultate);
+      console.log(elem);
       showVerse(elem.versete);
     } else {
       console.log(elem.dificultate + " " + dificultate_selectata);
