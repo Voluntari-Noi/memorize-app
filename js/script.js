@@ -12,11 +12,12 @@ $(document).ready(function () {
     $(".memtest").addClass("visible");
     $(".alege-dificultate").removeClass("visible");
     $(".memtest").removeClass("hidden");
-    
+
     $(".blank-words-test").BlankWordsTest();
   }
   $(".dificultate").on( "click", function() {
     console.log("Dificultate"+ $( this ).text() );
+    localStorage.setItem("dificultate",$(this).text());
   });
 });
 
