@@ -1,5 +1,7 @@
 $(document).ready(function () {
   var dificultate = localStorage.getItem("dificultate");
+  console.log(dificultate);
+  console.log("before if");
   if (dificultate == undefined || dificultate.length == 0) {
     $(".alege-dificultate").addClass("visible");
     $(".blank-words-test").addClass("hidden");
