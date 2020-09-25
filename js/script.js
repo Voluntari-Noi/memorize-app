@@ -67,6 +67,7 @@ function getUsage(str) {
     usage = "0";
   if (usage.length == 0)
     usage = "0";
+  console.log(usage + "   " + str);
   return parseInt(usage);
 }
 function showVerse(all_texts) {
@@ -177,7 +178,7 @@ $.fn.BlankWordsTest = function () {
     if (elem.dificultate == dificultate_selectata) {
       console.log("Showing verse for dificulty:" + elem.dificultate);
       console.log(elem);
-      var usages=elem.versete.map(item => getUsage(item));
+      var usages = elem.versete.map(item => getUsage(item));
       minVerseUsage = Math.min(...usages);
       console.log(minVerseUsage);
       console.log(usages);
