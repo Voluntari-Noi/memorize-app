@@ -26,7 +26,7 @@ $(document).ready(function () {
     localStorage.setItem("dificultate", $(this).text());
     reloadView();
   });
-  $(".dificultate-selectata").on("click",function(){
+  $(".dificultate-selectata").on("click", function () {
     clearLocalStorage();
   });
 });
@@ -147,8 +147,9 @@ function showVerse(all_texts) {
 }
 
 
+var d = new Date();
 $.fn.BlankWordsTest = function () {
-  var jsonStr = httpGet("assets/versete.json?v="+Date.getTime());
+  var jsonStr = httpGet("assets/versete.json?v=" + d.getTime());
   var jsonObj = JSON.parse(jsonStr);
   var dificultate_selectata = localStorage.getItem("dificultate");
   jsonObj.memoreaza.forEach(elem => {
