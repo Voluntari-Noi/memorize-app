@@ -54,7 +54,8 @@ function httpGet(theUrl) {
 }
 
 function showVerse(all_texts) {
-
+  $(".blank-words-right").html("");
+  $(".blank-words-left").html("");
   var number_of_texts = all_texts.length;
   var random_index = Math.floor(Math.random() * (number_of_texts));
   var text_definition = all_texts[random_index];
