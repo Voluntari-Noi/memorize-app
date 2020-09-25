@@ -18,7 +18,15 @@ function reloadView() {
     $(".blank-words-test").BlankWordsTest();
   }
 }
-
+function getHashCode(str) {
+  var hash = 0, i, chr;
+  for (i = 0; i < str.length; i++) {
+    chr = str.charCodeAt(i);
+    hash = ((hash << 5) - hash) + chr;
+    hash |= 0; // Convert to 32bit integer
+  }
+  return hash;
+}
 $(document).ready(function () {
   reloadView();
   $(".dificultate").on("click", function () {
@@ -52,7 +60,14 @@ function httpGet(theUrl) {
   xmlHttp.send(null);
   return xmlHttp.responseText;
 }
-
+function getUsage(str) {
+  var usage = localStorage.getItem(getHashCode(str));
+  if (usage == undefined)
+    usage = 0;
+  if (usage.length == 0)
+    usage = 0;
+  return usage;
+}
 function showVerse(all_texts) {
   $(".blank-words-right").html("");
   $(".blank-words-left").html("");
@@ -120,7 +135,8 @@ function showVerse(all_texts) {
 
       if (number_words_to_drop == 0) {
         var text_tried = $("div.blank-words-left p").text();
-
+        var usage = getUsage(text_correct) + 1;
+        localStorage.setItem(getHashCode(text_correct), usage);
         if (text_tried == text_correct) {
           $(".blank-words-status").html("<p class='status-succes-text'><b> <i class='fa fa-check'></i></b></p>");
           swal("🎉 Felicitări! ", "Ai învățat un verset!");
@@ -146,8 +162,11 @@ function showVerse(all_texts) {
     }
   });
 }
-
-
+var minVerseUsage = 0;
+function filterOnlyLessGuessedVerses(verse) {
+  var verseUsage = getUsage(verse);
+  return verseUsage == minVerseUsage;
+}
 var d = new Date();
 $.fn.BlankWordsTest = function () {
   var jsonStr = httpGet("assets/versete.json?v=" + d.getTime());
@@ -157,7 +176,9 @@ $.fn.BlankWordsTest = function () {
     if (elem.dificultate == dificultate_selectata) {
       console.log("Showing verse for dificulty:" + elem.dificultate);
       console.log(elem);
-      showVerse(elem.versete);
+
+      minVerseUsage = Math.min(...elem.versete.map(item => getUsage(item)));
+      showVerse(elem.versete.filter(filterOnlyLessGuessedVerses));
     } else {
       console.log(elem.dificultate + " " + dificultate_selectata);
     }
