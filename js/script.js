@@ -20,7 +20,8 @@ function reloadView() {
       "mediu": "mediu",
       "greu": "greu"
     };
-    $(".dificultate-selectata").text(level_texts[dificultate]);
+    var icon = "<i class='fas fa-bars'></i> ";
+    $(".dificultate-selectata").html(icon + level_texts[dificultate]);
     $(".blank-words-test").BlankWordsTest();
   }
 }
