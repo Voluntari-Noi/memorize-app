@@ -314,6 +314,7 @@ div.app-container {
   border-radius: 10px;
   min-height: 300px;
   padding: 20px;
+  margin-top: 10px;
 }
 
 div.app-container a, section.footer a {
