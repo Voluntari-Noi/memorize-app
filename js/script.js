@@ -15,7 +15,12 @@ function reloadView() {
     $(".dificultate-selectata").removeClass("color-mediu");
     $(".dificultate-selectata").removeClass("color-greu");
     $(".dificultate-selectata").addClass("color-" + dificultate);
-    $(".dificultate-selectata").text(dificultate);
+    var level_texts = {
+      "usor": "ușor",
+      "mediu": "mediu",
+      "greu": "greu"
+    };
+    $(".dificultate-selectata").text(level_texts[dificultate]);
     $(".blank-words-test").BlankWordsTest();
   }
 }
@@ -32,7 +37,7 @@ $(document).ready(function () {
   reloadView();
   $(".dificultate").on("click", function () {
     console.log("Dificultate" + $(this).text());
-    localStorage.setItem("dificultate", $(this).text());
+    localStorage.setItem("dificultate", $(this).attr('data-level'));
     reloadView();
   });
   $(".dificultate-selectata").on("click", function () {
