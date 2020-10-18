@@ -25,6 +25,7 @@ function reloadView() {
     $(".blank-words-test").BlankWordsTest();
   }
 }
+
 function getHashCode(str) {
   var hash = 0, i, chr;
   for (i = 0; i < str.length; i++) {
@@ -34,6 +35,7 @@ function getHashCode(str) {
   }
   return hash;
 }
+
 $(document).ready(function () {
   reloadView();
   $(".dificultate").on("click", function () {
@@ -45,10 +47,12 @@ $(document).ready(function () {
     clearLocalStorage();
   });
 });
+
 function clearLocalStorage() {
   localStorage.clear();
   reloadView();
 }
+
 function shuffle(array) {
   var currentIndex = array.length, temporaryValue, randomIndex;
 
@@ -61,12 +65,14 @@ function shuffle(array) {
   }
   return array;
 }
+
 function httpGet(theUrl) {
   var xmlHttp = new XMLHttpRequest();
   xmlHttp.open("GET", theUrl, false); // false for synchronous request
   xmlHttp.send(null);
   return xmlHttp.responseText;
 }
+
 function getUsage(str) {
   var strHash = getHashCode(str);
   var usage = localStorage.getItem(strHash);
@@ -77,6 +83,7 @@ function getUsage(str) {
   console.log(usage + "   " + strHash + "   " + str);
   return parseInt(usage) + (strHash == lastVerseHash ? 1 : 0);
 }
+
 function showVerse(all_texts) {
   $(".blank-words-right").html("");
   $(".blank-words-left").html("");
@@ -180,12 +187,14 @@ function showVerse(all_texts) {
     }
   });
 }
+
 var minVerseUsage = 0;
 var lastVerseHash = 0;
 function filterOnlyLessGuessedVerses(verse) {
   var verseUsage = getUsage(verse);
   return verseUsage == minVerseUsage;
 }
+
 var d = new Date();
 $.fn.BlankWordsTest = function () {
   var jsonStr = httpGet("assets/versete.json?v=" + d.getTime());
@@ -197,7 +206,7 @@ $.fn.BlankWordsTest = function () {
       console.log(elem);
       var usages = elem.versete.map(item => getUsage(item));
       minVerseUsage = Math.min(...usages);
-      lastVerseHash = localStorage.getItem("last-verse")
+      lastVerseHash = localStorage.getItem("last-verse");
       console.log(minVerseUsage);
       console.log(usages);
       showVerse(elem.versete.filter(filterOnlyLessGuessedVerses));
