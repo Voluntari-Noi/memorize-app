@@ -15,6 +15,7 @@
 	padding: 0.5em 10px;
 	border-radius: 10px;
 	font-size: 14pt;
+  margin-bottom: 20px;
 }
 
 .test-text-editor, .multiple-choice-test-editor, .assignment-test-editor, .blank-words-test-editor, .category, .item {
@@ -266,13 +267,12 @@ div.memtest h4 {
 }
 
 .dificultate, .dificultate-selectata {
-	padding: 11px;
+  padding: 10px 20px 10px 20px;
 	margin: 10px auto;
-	width: 200px;
+	width: 150px;
 	text-align: center;
 	text-transform: uppercase;
 	font-weight: 600;
-	letter-spacing: 1px;
 	cursor: pointer;
   border-radius: 10px;
 }
@@ -337,7 +337,6 @@ section.footer div.logo img {
 .app-btn-primary {
   color: white !important;
   margin-top: 10px;
-  padding: 11px;
   margin: 10px auto;
   text-align: center;
   font-weight: 600;
@@ -345,4 +344,9 @@ section.footer div.logo img {
   border-radius: 10px;
   background: #34aeef;
   border: none;
+  padding: 10px 20px 10px 20px;
+}
+
+.app-btn-primary:hover {
+  background: #2d96ce;
 }
