@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Versete de memorat - Pentru Cer</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Învață versete biblice.">
   <!-- PWA Section-->
   <link rel="manifest" href="manifest.json?v=4">
@@ -23,14 +23,11 @@
   <script type="text/javascript" src="js/jquery-ui.min.js?v=1"></script>
   <script type="text/javascript" src="js/fix-touch.js?v=1"></script>
 
-  <link rel="stylesheet" href="css/bootstrap.min.css?v=1"
-    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/bootstrap.min.css?v=1" crossorigin="anonymous">
 
-  <script src="/js/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="/js/popper.min.js" crossorigin="anonymous"></script>
 
-  <script src="/js/bootstrap.min.js?v=1"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="/js/bootstrap.min.js?v=1" crossorigin="anonymous"></script>
 
   <script type="text/javascript" src="js/sweetalert.min.js?v=1"></script>
   <script type="text/javascript" src="js/script.js?v=27"></script>
@@ -38,51 +35,69 @@
 </head>
 
 <body>
-  <div class="container">
-    <div class="row">
-      <div class="span12">
-        <div class="inner-content">
-          <article class="memtest-view content">
-            <div id="printableArea">
-              <h1 class="app-title">Versete de memorat</h1>
-              <div class="memtest">
-                <div class="test-text">
-                  <p>Învață versete biblice completând spațiile libere cu cuvintele potrivite.</p>
-                </div>
+  <section class="application">
+    <div class="container app-container">
+      <div class="row">
+        <div class="col">
+          <h1 class="app-title">Versete de memorat</h1>
+        </div>
+      <!-- Content here -->
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="app-content">
+            <article class="memtest-view content">
+              <div id="printableArea">
+                <div class="memtest">
+                  <div class="test-text">
+                    <p>Învață versete biblice completând spațiile libere cu cuvintele potrivite.</p>
+                  </div>
 
-                <h4>Mută cuvintele cu mouse-ul.</h4>
-                <div class="blank-words-test">
-                  <div class="top-radius-div">
-                    <div class="blank-words-left">
+                  <h4>Mută cuvintele cu mouse-ul.</h4>
+                  <div class="blank-words-test">
+                    <div class="top-radius-div">
+                      <div class="blank-words-left">
+                      </div>
+                      <div class="blank-words-right">
+                      </div>
                     </div>
-                    <div class="blank-words-right">
+                    <div class="blank-words-status">
+                      <p><b><i class="fa fa-spinner"></i></b></p>
                     </div>
                   </div>
-                  <div class="blank-words-status">
-                    <p><b><i class="fa fa-spinner"></i></b></p>
-                  </div>
+                  <div class="dificultate-selectata"></div>
                 </div>
-                <div class="dificultate-selectata"></div>
+                <div class="alege-dificultate hidden">
+                  <center>Alege dificultatea:</center>
+                  <!--<div class="dificultate color-test">test</div>-->
+                  <div class="dificultate color-usor">usor</div>
+                  <div class="dificultate color-mediu">mediu</div>
+                  <div class="dificultate color-greu">greu</div>
+                </div>
               </div>
-              <div class="alege-dificultate hidden">
-                <center>Alege dificultatea:</center>
-                <!--<div class="dificultate color-test">test</div>-->
-                <div class="dificultate color-usor">usor</div>
-                <div class="dificultate color-mediu">mediu</div>
-                <div class="dificultate color-greu">greu</div>
-              </div>
+            </article>
+            <div class="footer">
+              <p>
+                <a href>Click aici pentru un nou verset.</a>
+                Pentru mai multe aplicații educaționale te așteptăm aici: <a href="https://pentrucer.net">Pentru Cer</a>
+              </p>
             </div>
-          </article>
-          <div class="footer">
-            <p>
-              <a href>Click aici pentru un nou verset.</a>
-              Pentru mai multe aplicații educaționale te așteptăm aici: <a href="https://pentrucer.net">Pentru Cer</a>
-            </p>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
+
+  <section class="footer container">
+    <div class="info">
+      <p class="text-center">Some text here and <a href="#">a link</a>. Please click.</p>
+    </div>
+    <div class="logo">
+      <a href="https://www.pentrucer.net">
+        <img src="images/logo-pentru-cer.png" alt="Pentru Cer" />
+      </a>
+    </div>
+  </section>
 
 </body>
 
