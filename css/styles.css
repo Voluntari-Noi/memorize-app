@@ -322,6 +322,7 @@ h1.app-title {
   text-align: center;
   font-family: 'Noto Serif', serif;
   font-weight: 700;
+  margin-bottom: 20px;
 }
 
 section.footer {
