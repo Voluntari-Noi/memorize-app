@@ -1,3 +1,6 @@
+/* Colors: https://flatuicolors.com/palette/ru
+ */
+
 #test-text-textarea {
 	width: 100%;
 	height: 100%;
@@ -77,7 +80,7 @@ body, html {
 .multiple-choice-test-status, .sorting-test-status, .blank-words-status {
 	display: inline-block;
 	width: 100%;
-	background: #34aeef;
+	background: #c1c1c1;
 	padding: 0.5em 10px;
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
@@ -286,15 +289,15 @@ div.memtest h4 {
 }
 
 .color-usor {
-	background-color: khaki;
+	background-color: #f5cd79;
 }
 
 .color-mediu {
-	background-color: orange;
+	background-color: #f3a683;
 }
 
 .color-greu {
-	background-color: orangered;
+	background-color: #cf6a87;
 }
 
 .alege-dificultate>center {
@@ -318,7 +321,7 @@ div.app-container a, section.footer a {
 }
 
 h1.app-title {
-  color: #111111;
+  color: #574b90;
   text-align: center;
   font-family: 'Noto Serif', serif;
   font-weight: 700;
