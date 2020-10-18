@@ -151,11 +151,11 @@ function showVerse(all_texts) {
         localStorage.setItem("last-verse", tdHash);
         if (text_tried == text_correct) {
           $(".blank-words-status").html("<p class='status-succes-text'><b> <i class='fa fa-check'></i></b></p>");
-          swal("🎉 Felicitări! ", "Ai învățat un verset!");
+          swal("Felicitări! ", "Ai învățat un verset!", "success");
           $(".word").css("pointer-events", "none");
         } else {
           if (alerted_fail == false) {
-            swal("Ai greșit!❌", "Încearcă din nou.");
+            swal("Ai greșit!", "Încearcă din nou.", "error");
           }
 
           setTimeout(function () {
