@@ -371,3 +371,7 @@ section.footer div.logo img {
     width: 100%;
   }
 }
+
+h1.app-title .fas {
+  color: #c1c1c1;
+}
