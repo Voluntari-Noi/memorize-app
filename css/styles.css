@@ -350,3 +350,11 @@ section.footer div.logo img {
 .app-btn-primary:hover {
   background: #2d96ce;
 }
+
+.swal-title {
+  color: #111111;
+}
+
+.swal-text {
+  color: #212529;
+}
