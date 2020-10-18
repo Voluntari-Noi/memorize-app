@@ -362,3 +362,12 @@ section.footer div.logo img {
 .swal-text {
   color: #212529;
 }
+
+@media screen and (max-width: 377px) {
+  .dificultate-selectata {
+    width: 100%;
+  }
+  .app-btn-primary {
+    width: 100%;
+  }
+}
