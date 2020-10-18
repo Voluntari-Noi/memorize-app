@@ -267,7 +267,6 @@ div.memtest h4 {
 
 .dificultate, .dificultate-selectata {
 	padding: 11px;
-	border: 1px solid gray;
 	margin: 3px auto;
 	width: 200px;
 	text-align: center;
@@ -275,6 +274,11 @@ div.memtest h4 {
 	font-weight: 600;
 	letter-spacing: 1px;
 	cursor: pointer;
+  border-radius: 10px;
+}
+
+.dificultate-selectata {
+  float: left;
 }
 
 .color-test {
