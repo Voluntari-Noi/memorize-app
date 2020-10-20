@@ -1,7 +1,9 @@
 * Deploy
 
 $ git clone git@github.com:Voluntari-Noi/memorize-app.git versete-de-memorat
+
 $ cd versete-de-memorat
+
 $ vim index.html
 
   Replace GA Placeholder with GA script
@@ -9,6 +11,7 @@ $ vim index.html
 TODO: On deploy add Google Analytics script (make sure latest version is used).
       Replace GA Placeholder.
 
+```
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172115546-1"></script>
 <script>
@@ -17,5 +20,6 @@ TODO: On deploy add Google Analytics script (make sure latest version is used).
   gtag('js', new Date());
   gtag( 'config', 'UA-172115546-1' );
 </script>
+```
 
 * Idee: butoane cu steguleț pentru fiecare limbă (en, fr, ro). Să se poată alege limba și să vină textele în limba selectată.
