@@ -9,3 +9,5 @@ TODO: On deploy add Google Analytics script (make sure latest version is used).
   gtag('js', new Date());
   gtag( 'config', 'UA-172115546-1' );
 </script>
+
+* Idee: butoane cu steguleț pentru fiecare limbă (en, fr, ro). Să se poată alege limba și să vină textele în limba selectată.
