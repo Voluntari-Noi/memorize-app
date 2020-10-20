@@ -21,5 +21,12 @@ TODO: On deploy add Google Analytics script (make sure latest version is used).
   gtag( 'config', 'UA-172115546-1' );
 </script>
 ```
+FTP connect with FileZilla
+
+Delete existing contents of versete-de-memorat folder on server.
+
+Create new directory applicatii/versete-de-memorat
+
+Copy all files from new version. (without .git folder)
 
 * Idee: butoane cu steguleț pentru fiecare limbă (en, fr, ro). Să se poată alege limba și să vină textele în limba selectată.
