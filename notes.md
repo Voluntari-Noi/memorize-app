@@ -1,3 +1,11 @@
+* Deploy
+
+$ git clone git@github.com:Voluntari-Noi/memorize-app.git versete-de-memorat
+$ cd versete-de-memorat
+$ vim index.html
+
+  Replace GA Placeholder with GA script
+
 TODO: On deploy add Google Analytics script (make sure latest version is used).
       Replace GA Placeholder.
 
