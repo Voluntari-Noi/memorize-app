@@ -1,3 +1,6 @@
+* Idei
+TODO add aici
+
 * Deploy
 
 $ git clone git@github.com:Voluntari-Noi/memorize-app.git versete-de-memorat
